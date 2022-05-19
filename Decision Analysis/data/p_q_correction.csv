@@ -1,0 +1,9 @@
+Criteria,q,p,type-number,type,weights
+Price,20.0,50.0,type5,cost,5
+Difficulty,20.0,40.0,type4,gain,6
+Playthrough time,15.0,25.0,type5,gain,3
+Graphics,10.0,30.0,type4,gain,4
+Lore,0.0,20.0,type4,gain,9
+Soundtrack,,,type1,gain,10
+Gameplay,10.0,40.0,type4,gain,10
+Bugs,20.0,,type2,cost,4
