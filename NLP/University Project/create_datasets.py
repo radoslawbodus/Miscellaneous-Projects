@@ -41,7 +41,7 @@ def create_datasets(path_filmweb, path_imdb, path_splits):
         # df_filmweb_sampled, df_imdb_all_sampled = down_sample_both_dfs(df_filmweb, df_imdb_all, n_min=n_min, n_max=n_max)
         for i, df_sample in enumerate(down_sample_both_dfs(df_filmweb, df_imdb_all, n_min=n_min, n_max=n_max)):
             path_name = "datasets/ready_data_" + ["filmweb", "imdb"][i] + "_" + ending_convention + ".csv"
-            df_sample.to_csv(path_name, index=False)
+            df_sample.sample(frac=1.).to_csv(path_name, index=False)
     
 if __name__ == "__main__":
     create_datasets(sys.argv[1], sys.argv[2], sys.argv[3])
